@@ -6,7 +6,7 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.applications.vgg16 import VGG16, preprocess_input
 
 # Load the VGG16-based model
-model = load_model("./models/fine_tuning.h5")
+model = load_model("./models/vgg.h5")
 
 # Load the pre-trained VGG16 base for feature extraction
 conv_base = VGG16(weights="imagenet", include_top=False, input_shape=(180, 180, 3))
